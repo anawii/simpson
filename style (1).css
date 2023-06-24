@@ -1,0 +1,482 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+  font-family: Simpsonsfont DEMO, Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/019/506/943/original/white-blue-day-cumulus-cloud-symbol-shape-or-cloudscape-background-vector.jpg");
+  /* Ruta de la nueva imagen de fondo */
+}
+
+@font-face {
+  font-family: "Simpsonfont DEMO";
+  src: url('Simpsonfont DEMO.otf');
+}
+
+/* HEADER */
+header {
+  background-color: #000000;
+  color: #ffd500;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  height: 70px;
+}
+
+.logo {
+  padding: 60px 30px;
+  margin-top: 26px;
+  margin-right: 320px;
+  /* Espacio entre el logo y las pestañas de navegación */
+}
+
+.logo img {
+
+  width: 100px;
+  /* Ancho del logo */
+  height: 50px;
+  /* Alto del logo */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-left: 110px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#search-input {
+  text-align: center;
+  padding: 0;
+  margin: 0px;
+  width: 200px;
+  height: 42px;
+  border: 1px solid #000000;
+  border-radius: 25px;
+  margin-right: 8px;
+  font-size: 17px;
+}
+
+#search-button {
+  background-color: #ffde00;
+  color: #030303;
+  border: none;
+  width: 100px;
+  height: 42px;
+  border-radius: 35px;
+  cursor: pointer;
+  vertical-align: middle;
+  align-items: center;
+  /* para que se mueva al hacer click */
+  position: relative;
+  transition: transform 1.5s ease;
+}
+
+#search-button:hover {
+  background-color: #ff00ae;
+  /* Color de fondo al pasar el mouse sobre las pestañas */
+  color: #ffea00;
+  cursor: pointer;
+  width: 100px;
+  height: 42px;
+  border-radius: 35px;
+  transform: scale(1.3);
+}
+
+#search-button:active {
+  background-color: #fff700;
+  color: black;
+}
+
+#search-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #080808;
+}
+
+nav,
+nav * {
+  font-family: "Simpsonfont DEMO";
+  src: url('Simpsonfont DEMO.otf');
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 22px;  /* Espacio entre las pestañas */
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #fff700;
+  /* Color del texto de las pestañas */
+  padding: 10px 30px;
+  border-radius: 35px;
+  vertical-align: middle;
+}
+
+.nav-menu li a:hover {
+  background-color: #ff00ae;
+  /* Color de fondo al pasar el mouse sobre las pestañas */
+  color: #ffea00;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.nav-menu li a:active {
+  background-color: #fff700;
+  color: black;
+  vertical-align: middle;
+}
+
+.nav-menu li a:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #080808;
+}
+
+#btnInicial {
+  font-family: "Simpsonfont DEMO";
+  src: url('Simpsonfont DEMO.otf');
+  align-items: center;
+  border: none;
+  background-color: #ffd500;
+  color: black;
+  border-radius: 50px;
+  width: 250px;
+  height: 40px;
+  transition: 0.7s;
+}
+
+#btnInicial:hover {
+  background-color: #ff00ae;
+  /* Color de fondo al pasar el mouse sobre las pestañas */
+  color: #ffea00;
+  cursor: pointer;
+  width: 250px;
+  height: 40px;
+  border-radius: 35px;
+  transform: scale(1.3);
+}
+
+.expandir {
+  width: 100%;
+}
+
+.container {
+  margin-top: 20px;
+  border-color: yellow;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.pagination a {
+  margin: 5px;
+}
+
+div {
+  text-align: center;
+
+}
+
+h1,
+h2,
+h3,
+h5,
+h7 {
+  font-family: "Simpsonfont DEMO";
+  color: #030303;
+  margin-bottom: 10px;
+}
+
+h4,
+h6 {
+  font-family: "Simpsonfont DEMO";
+  color: #030303;
+  font-size: 12px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+h8 {
+  font-family: "Simpsonfont DEMO";
+  color: #030303;
+  font-size: 13px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+#card-button {
+  padding: 15px 20px;
+  background-color: #ffde00;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 20px;
+
+  align-items: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 20px;
+  color: #ff00c8;
+}
+
+a {
+  color: #0a0706;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Estilos js */
+.personaje-card {
+  margin-top: 26px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 40px;
+
+  width: 10rem;
+  height: 25rem;
+  object-fit: contain;
+  /* El ancho del card será el 25% menos los márgenes */
+  margin-bottom: 10px;
+}
+
+.card-img {
+  background-color: #ffffff;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  width: 400px;
+  height: 350px;
+  margin-bottom: 10px;
+
+
+}
+
+.card-img:hover {
+  background-image: url("https://p4.wallpaperbetter.com/wallpaper/37/315/751/the-simpsons-homer-simpson-bart-simpson-wallpaper-preview.jpg");
+  width: 400px;
+  height: 310px;
+  border-radius: 30px;
+
+}
+
+.card-title {
+  font-size: 18px;
+  color: #ff0095;
+  margin-bottom: 10px;
+}
+
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+/* ... otros estilos ... */
+
+.card-img {
+  width: 150px;
+  height: 250px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card-img:hover {
+  transform: scale(1.2);
+  background-image: url("https://img.freepik.com/vector-premium/fondo-donas-dibujos-animados-donas-patron-costuras_77895-122.jpg?w=2000");
+  background-size: cover;
+}
+
+.card-button {
+  font-family: "Simpsonfont DEMO";
+  background-color: #000000;
+
+  border: none;
+  color: #ffea00;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin-top: 7px;
+  margin: 4px 7px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.card-button:hover {
+  background-color: #ffde00;
+  color: #000000;
+}
+
+/* allert */
+.my-custom-alert {
+  /* Agrega aquí tus estilos personalizados */
+  background-color: #f0f0f0;
+  color: #333;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para secciones específicas */
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+section ul li {
+  margin-bottom: 5px;
+}
+
+section img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* DISEÑO DEL SWEETALERT */
+/* Cambia el color de fondo del cuadro de diálogo */
+.my-custom-alert {
+  background-color: #668cff;
+}
+
+.my-custom-alert .swal2-icon {
+  color: #000000;
+  /* Cambia el color del icono del alert */
+}
+
+.my-custom-alert .swal2-title {
+  color: #ff0088;
+  /* Cambia el color del título del alert */
+}
+
+.my-custom-alert .swal2-text {
+  color: #0000FF;
+  /* Cambia el color del contenido del alert */
+  font-size: 15px;
+}
+
+/* Cambia el color del texto del botón de confirmación */
+.swal2-confirm:not([disabled]):hover {
+  background-color: #ffd500;
+  color: #030302;
+}
+
+
+/* CONTACTO- parte inferior de la web */
+#pantalla-inferior {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div label,
+div input,
+div textarea,
+div input[type="submit"] {
+  display: block;
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  
+}
+
+form {
+  margin-top: 20px;
+  margin-left: 470px;
+  margin-bottom: 60px;
+
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 400px;
+  height: 30px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ffea00;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="submit"] {
+  background-color: #fbff00;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff0095;
+  color: #fbff00;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+footer {
+  font-size: 14px;
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
